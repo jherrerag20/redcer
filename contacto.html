@@ -66,11 +66,11 @@
 					   		<div class="menu-wrapper float-left">
 					   			<nav id="mega-menu-holder" class="clearfix">
 								   <ul class="clearfix">
-									    <li><a href="about.html">Acerca de nosotros</a></li>
-									    <li><a href="service-v2.html">Servicios</a></li>
-									    <li><a href="project.html">Certificaciones</a></li>
-										<li><a href="blog-details.html">Blog</a></li>
-									    <li><a href="contact.html">Contacto</a></li>
+									    <li><a href="acerca.html">Acerca de nosotros</a></li>
+									    <li><a href="servicios.html">Servicios</a></li>
+									    <li><a href="certificaciones.html">Certificaciones</a></li>
+										<li><a href="blog.html">Blog</a></li>
+									    <li><a href="contacto.html">Contacto</a></li>
 								   </ul>
 								</nav> <!-- /#mega-menu-holder -->
 					   		</div> <!-- /.menu-wrapper -->
@@ -100,8 +100,15 @@
 			=====================================================
 			-->
 			<!-- Google Map -->
-			<div class="google-map-two section-spacing"><div class="map-canvas"></div></div>
+			<!-- <div class="google-map-two section-spacing"><div class="map-canvas"></div></div>-->
 
+			<div class="theme-inner-banner section-spacing">
+				<div class="overlay">
+					<div class="container">
+						<h2>Contacto</h2>
+					</div> <!-- /.container -->
+				</div> <!-- /.overlay -->
+			</div> <!-- /.theme-inner-banner -->
 
 			<!-- 
 			=============================================
@@ -111,18 +118,56 @@
 			<div class="contact-us-section section-spacing">
 				<div class="container">
 					<div class="theme-title-one">
-						<h2>Contáctanos</h2>
-						<p>Mándanos mensaje a través de nuestras redes sociales o algún correo a: contacto@redescertificadas.com</p>
-					</div> <!-- /.theme-title-one -->	
-				</div> <!-- /.main-content -->
-			</div> <!-- /.container -->
+						<h2>COTIZA GRATIS</h2>
+						<p>Comunicate con nosotros a través de nuestras redes sociales o cotiza mediante el siguiente formulario:</p>
+					</div> <!-- /.theme-title-one -->
+					<div class="clearfix main-content no-gutters row">
+						<!-- <div class="col-lg-5 col-12"><div class="img-box"></div></div> -->
+						<div>
+							<div class="form-wrapper">
+								<form action="inc/sendemail.php" class="theme-form-one form-validation" autocomplete="off">
+									<div class="row">
+										<div class="col-sm-6 col-12"><input type="text" placeholder="Nombre" name="name"></div>
+										<div class="col-sm-6 col-12"><input type="text" placeholder="Teléfono" name="phone"></div>
+										<div class="col-sm-6 col-12"><input type="email" placeholder="Email" name="email"></div>
+										<div class="col-sm-6 col-12"><input type="text" placeholder="Servicio de interés" name="web"></div>
+										<div class="col-12"><textarea placeholder="Descríbenos tu proyecto" name="message"></textarea></div>
+									</div> <!-- /.row -->
+									<button class="theme-button-one">MANDAR SOLICITUD</button>
+								</form>
+							</div> <!-- /.form-wrapper -->
+						</div> <!-- /.col- -->
+					</div> <!-- /.main-content -->
+				</div> <!-- /.container -->
+
+				<!--Contact Form Validation Markup -->
+				<!-- Contact alert -->
+				<div class="alert-wrapper" id="alert-success">
+					<div id="success">
+						<button class="closeAlert"><i class="fa fa-times" aria-hidden="true"></i></button>
+						<div class="wrapper">
+			               	<p>Tu mensaje se envió correctamente.</p>
+			             </div>
+			        </div>
+			    </div> <!-- End of .alert_wrapper -->
+			    <div class="alert-wrapper" id="alert-error">
+			        <div id="error">
+			           	<button class="closeAlert"><i class="fa fa-times" aria-hidden="true"></i></button>
+			           	<div class="wrapper">
+			               	<p>Algo salió mal.</p>
+			            </div>
+			        </div>
+			    </div> <!-- End of .alert_wrapper -->
+			</div> <!-- /.contact-us-section -->
+
+
 
 			<!-- 
 			=============================================
 				Compnay Branch Address
 			============================================== 
 			-->
-			<div class="branch-address">
+			<!-- <div class="branch-address">
 				<div class="container">
 					<div class="row">
 						<div class="address-slider">
@@ -130,42 +175,42 @@
 								<div class="wrapper">
 									<h6>Oficina Michoacán</h6>
 									<p><i class="fa fa-address-book-o" aria-hidden="true"></i> Guadalupe Victoria 619, Industrial, Mor. </p>
-								</div> <!-- /.wrapper -->
+								</div> 
 							</div>
 							<div class="item">
 								<div class="wrapper">
 									<h6>Querétaro</h6>
 									<p><i class="fa fa-address-book-o" aria-hidden="true"></i> Contáctanos mediante nuestras redes.</p>
-								</div> <!-- /.wrapper -->
+								</div> 
 							</div>
 							<div class="item">
 								<div class="wrapper">
 									<h6>Guanajuato</h6>
 									<p><i class="fa fa-address-book-o" aria-hidden="true"></i> Contáctanos mediante nuestras redes.</p>
-								</div> <!-- /.wrapper -->
+								</div>
 							</div>
 							<div class="item">
 								<div class="wrapper">
 									<h6>Jalisco</h6>
 									<p><i class="fa fa-address-book-o" aria-hidden="true"></i> Contáctanos mediante nuestras redes.</p>
-								</div> <!-- /.wrapper -->
+								</div>
 							</div>
 							<div class="item">
 								<div class="wrapper">
 									<h6>Aguascalientes</h6>
 									<p><i class="fa fa-address-book-o" aria-hidden="true"></i> Contáctanos mediante nuestras redes.</p>
-								</div> <!-- /.wrapper -->
+								</div>
 							</div>
 							<div class="item">
 								<div class="wrapper">
 									<h6>Coahuila</h6>
 									<p><i class="fa fa-address-book-o" aria-hidden="true"></i> Contáctanos mediante nuestras redes.</p>
-								</div> <!-- /.wrapper -->
+								</div>
 							</div>
-						</div> <!-- /.address-slider -->
+						</div>
 					</div>
-				</div> <!-- /.container -->
-			</div> <!-- /.branch-address -->
+				</div>
+			</div> -->
 			
 			
 			<!--
@@ -188,7 +233,7 @@
 									<li class="clearfix">
 										<img src="images/blog/bl2.jpg" alt="" class="float-left">
 										<div class="post float-left">
-											<a href="blog-details.html">Promoviendo Soluciones de Energía Renovable: Un Camino Hacia un Futuro Sostenible</a>
+											<a href="blog.html">Promoviendo Soluciones de Energía Renovable: Un Camino Hacia un Futuro Sostenible</a>
 											<div class="date"><i class="fa fa-calendar-o" aria-hidden="true"></i> Jun 07, 2024</div>
 										</div>
 									</li>
@@ -197,14 +242,14 @@
 							<div class="col-xl-2 col-lg-3 col-sm-6 footer-list">
 								<h6 class="title">Soluciones</h6>
 								<ul>
-									<li><a href="service-v2.html">Cableado estructurado</a></li>
-									<li><a href="service-v2.html">Energía</a></li>
-									<li><a href="service-v2.html">Telefonía IP</a></li>
-									<li><a href="service-v2.html">Videovigilancia</a></li>
-									<li><a href="service-v2.html">Control de acceso</a></li>
-									<li><a href="service-v2.html">Networking</a></li>
-									<li><a href="service-v2.html">Detección de incendio</a></li>
-									<li><a href="service-v2.html">Enfriamiento</a></li>
+									<li><a href="servicios.html">Cableado estructurado</a></li>
+									<li><a href="servicios.html">Energía</a></li>
+									<li><a href="servicios.html">Telefonía IP</a></li>
+									<li><a href="servicios.html">Videovigilancia</a></li>
+									<li><a href="servicios.html">Control de acceso</a></li>
+									<li><a href="servicios.html">Networking</a></li>
+									<li><a href="servicios.html">Detección de incendio</a></li>
+									<li><a href="servicios.html">Enfriamiento</a></li>
 								</ul>
 							</div> <!-- /.footer-list -->
 							<div class="col-xl-3 col-lg-2 col-sm-6 footer-newsletter">
@@ -224,9 +269,9 @@
 							<div class="col-md-6 col-12"><p>&copy; Copyrights 2024. Todos los derechos reservados.</p></div>
 							<div class="col-md-6 col-12">
 								<ul>
-									<li><a href="about.html">Acerca de nosotros</a></li>
-									<li><a href="service-v2.html">Soluciones</a></li>
-									<li><a href="contact.html">Contacto</a></li>
+									<li><a href="acerca.html">Acerca de nosotros</a></li>
+									<li><a href="servicios.html">Soluciones</a></li>
+									<li><a href="contacto.html">Contacto</a></li>
 								</ul>
 							</div>
 						</div>
